@@ -13,7 +13,7 @@ void addinfo();
 void add();
 
 
-int y,j[8]={1,2,3,4,5,6,7,8}, n = 0, k = 0, sum1 = 0, sum2;
+int y,j[8]={1,2,3,4,5,6,7,8}, n[8], k = 0,lo, sum1 = 0, sum2;
 string nama,pc;
 string i[8]={"Microwave Oven 1.5L",
 "Panasonic Iron",
@@ -30,14 +30,18 @@ int choose ,choose1, choose2, choose3, choose4, choose5;
 int main(){
 //	code();
 	
-	name();
+//	name();
 	lable:
 	menu();
 	switch(choose){
 		case 1:
  			
 		item();
-		back();
+		addinfo();
+		add();
+		for(lo=0;lo<8;lo++)
+		cout<<n[lo];
+		/*back();
 		switch(choose1){
 			case 1:
 				goto lable;
@@ -45,12 +49,13 @@ int main(){
 				exit(0);
 				break;
 		}
+		
 		case 2:
 		cart();	
 		case 3:
 		exit(0);
 		
-			break; 
+		*/	break; 
 	}
 	
 	
@@ -95,18 +100,26 @@ void code(){
 	cin>>pc;
 } 
 void cart(){
-	cout<<
+
 	
 }
 void addinfo(){
 	cout<<"Please input a number that you want to add to your cart."<<endl;
-	cin>>
-}
-void back(){
-	cout<<"If you want to go back to the index,please input 1"<<endl;
-	cout<<"If you want exit the program,please input 2"<<endl;
-	cin>>choose1;
+	cin>>n[0];
+
 }
 void add(){
-	
+while(k<7){
+cout<<"The item has been added to your shopping cart,if you want to add another item,please choose the number";
+cin>>n[k];
+++k;
+}
+//for(k=1;k<7;k++)
+//	cout<<"The item has been added to your shopping cart,if you want to add another item,please choose the number";
+//	cin>>n[k];
+}
+void back(){
+	cout<<"If you want to go back to the menu,please input 1"<<endl;
+	cout<<"If you want exit the program,please input 2"<<endl;
+	cin>>choose1;
 }
