@@ -13,7 +13,7 @@ void addinfo();
 void add();
 
 
-int y,j[8]={1,2,3,4,5,6,7,8}, n[8], k = 0,lo, sum1 = 0, sum2;
+int y,j[8]={1,2,3,4,5,6,7,8}, n[8], k = 1,lo, sum1 = 0, sum2;
 string nama,pc;
 string i[8]={"Microwave Oven 1.5L",
 "Panasonic Iron",
