@@ -109,14 +109,11 @@ void addinfo(){
 
 }
 void add(){
-while(k<7){
+while(k<8){
 cout<<"The item has been added to your shopping cart,if you want to add another item,please choose the number";
 cin>>n[k];
 ++k;
 }
-//for(k=1;k<7;k++)
-//	cout<<"The item has been added to your shopping cart,if you want to add another item,please choose the number";
-//	cin>>n[k];
 }
 void back(){
 	cout<<"If you want to go back to the menu,please input 1"<<endl;
