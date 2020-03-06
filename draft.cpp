@@ -6,9 +6,14 @@ void name(); //the function of name.
 void menu(); //the function of menu that users can choose.
 void discount();//the function of judge discount.
 void item();//the function of item list.
-void code();//the function of the staff code. 
+void code();//the function of the staff code.
+void cart();
+void back(); 
+void addinfo();
+void add();
 
-int y,j = 0 , n = 0, k = 0, sum1 = 0, sum2;
+
+int y,j[8]={1,2,3,4,5,6,7,8}, n = 0, k = 0, sum1 = 0, sum2;
 string nama,pc;
 string i[8]={"Microwave Oven 1.5L",
 "Panasonic Iron",
@@ -18,25 +23,32 @@ string i[8]={"Microwave Oven 1.5L",
 "Kitchen L Shape Carpet",
 "San Disk Ultra Micro SD 32GB",
 "Mini Bluetooth Speaker"
-}; 
+};  
 int totalprice,lastprice,p[8]={299,40,80,50,12,24,40,10};
 int choose ,choose1, choose2, choose3, choose4, choose5;
 
 int main(){
 //	code();
-	for (y = 0; y<8; y++)
-		cout<<*(y + i)<<endl; 
+	
 	name();
+	lable:
 	menu();
 	switch(choose){
 		case 1:
-			
+ 			
+		item();
+		back();
+		switch(choose1){
+			case 1:
+				goto lable;
+			case 2:
+				exit(0);
+				break;
+		}
 		case 2:
-			
+		cart();	
 		case 3:
-			
-		case 4:
-			exit(0);
+		exit(0);
 		
 			break; 
 	}
@@ -60,23 +72,41 @@ void menu(){
 	cout<<"***********************************"<<endl;
 	cout<<"   *****   1.shop list *****"<<endl;
 	cout<<"   ****  2.shopping cart *****"<<endl;	
-	cout<<"   *****  3.staff only *****"<<endl;
-	cout<<"   ********  4.exit *******"<<endl;
+	cout<<"   ********  3.exit *******"<<endl;
 	cout<<"***********************************"<<endl;
 	cin>>choose;
 } 
 void discount(){
 	if(totalprice>=300){
-		lastprice=totalprice*0.05+totalprice;
+		lastprice=totalprice*0.95;
 	}
 	else{
 		lastprice=totalprice;
 	}
 }
 void item(){
-
+cout<<"*********************************************"<<endl;
+	cout<<"**NO.****Items               Price *********"<<endl;
+		for (y = 0; y<8; y++)
+	cout<<"**"<<*(y + j)<<"**"<<*(y + i)<<"********"<<*(y + p)<<"********"<<endl; 
 }
 void code(){
 	cout<<"Please input your code,if not,you can input \"no\""<<endl;
 	cin>>pc;
 } 
+void cart(){
+	cout<<
+	
+}
+void addinfo(){
+	cout<<"Please input a number that you want to add to your cart."<<endl;
+	cin>>
+}
+void back(){
+	cout<<"If you want to go back to the index,please input 1"<<endl;
+	cout<<"If you want exit the program,please input 2"<<endl;
+	cin>>choose1;
+}
+void add(){
+	
+}
