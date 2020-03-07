@@ -1,22 +1,53 @@
+#include <stdio.h>
 #include <iostream>
 #include <string>
-#include <stdlib.h>
-#include <cstring>
 using namespace std;
-void menu(); //the function of menu that users can choose.
-void discount();//the function of judge discount.
-void item();//the function of item list.
-void code();//the function of the staff code.
-void cart();
-void back(); 
-void addinfo();
-void add();
-void cadd();
+typedef struct Goods{
+int code;
+char name[20];
+double price;
+double discount;
+int number;
+double totalAccount;
+}
+Goods;
+void mainInterface(Goods *goods);
+void menu();
+void goodList();
+void addToCart(Goods *goods);
+void removeFromCart(Goods *goods);
+int payTheBill(Goods *goods);
+void showTheCart(Goods *goods);
+void menu(){
+    	cout<<"\n \t\t\t=========================\n";
+        cout<<"\n\t\t\t   WELCOME TO THE SHOP  \n";
+        cout<<"\n \t\t\t=========================\n\n";
+        cout<<"\n \t\t\t* * * * * * * * * * * * ";
+        cout<<"\n\t\t\t  1. SHOPPING LIST";
+        cout<<"\n\t\t\t  2. ADD ITEMS";
+        cout<<"\n\t\t\t  3. DEL ITEMS";
+		cout<<"\n\t\t\t  4. SHOPPING CART";
+		cout<<"\n\t\t\t  5. CHECK OUT";
+        cout<<"\n\t\t\t  6. EXIT";
+        cout<<"\n\t\t\t* * * * * * * * * * * *\n";
+       
+
+}
 
 
-int y,j[8]={1,2,3,4,5,6,7,8}, n[8], k = 1,lo, s,u;
-string nama,pc;
-string i[8]={
+
+void goodlist(){
+	int m[8]={
+299,
+12,
+40,
+24,
+80,
+40,
+50,
+10,
+};
+string shopping[8]={
 
 "1.        Microwave Oven 1.5L                 ",
 "2.        Tiers Shoe Rack                     ",
@@ -27,131 +58,215 @@ string i[8]={
 "7.        Hair Dryer                          ",
 "8.        Mini Bluetooth Speaker              ",
 };
-int totalprice,lastprice,p[8]={299,40,80,50,12,24,40,10};
-int choose ,choose1, choose2, choose3, choose4, choose5;
+	    for (int b=0;b<8;b++)
+		cout<<shopping[b]<<m[b]<<"RM"<<endl;
+}
+void mainInterface(Goods *goods){
+int select = 0;
+do{
+menu();
+cout<<"\n\t\t\t Enter Your choice: ";
+scanf("%d",&select);
+switch (select) {
+      case 6:
+			
+				exit(0); 
 
-int main(){
-/*	code();
-if (!strcmp(pc.c_str(), "staff"))
-    cout<<"staff";
-else if (!strcmp(pc.c_str(), "no"))
-    cout<<"no";
-else
-   cout<<"wrong";
-   */
+            case 1:
 
-	menu();
-	
+                goodlist();
 
-	
-	
+                break;
+
+            case 5:
+
+                select = payTheBill(goods);
+
+                break;
+
+            case 3:
+
+                removeFromCart(goods);
+
+                break;
+
+            case 2:
+
+                addToCart(goods);
+
+                break;
+
+            case 4:
+
+                showTheCart(goods);
+
+                break;
+
+            default:
+
+                cout<<"error!!\nPlease enter again：\n";
+                break;
+
+        }
+
+    }
+
+    while (select != 0) ;
 
 }
 
 
 
+void addToCart(Goods *goods){
+    //goodList();
+
+    int code = 0, number = 0;
+
+    printf("Please input the number:");
+
+    scanf("%d",&code);
+
+    printf("Please input the quantity");
+
+    scanf("%d",&number);
+
+    int flag = 0;
+    for (int i = 0; i < 3; i ++) {
+        if (goods[i].code == code) {
+            goods[i].number +=number;
+            flag = 1;
+            printf("Items added successfully! !!\n");
+            printf("*****************************\n");
+
+            break;
+
+        }
+
+    }
+
+    if (flag == 0) {
+
+            printf("Sorry, we do not have the items you want to buy\n");
+
+        }
+
+}
 
 
 
+void removeFromCart(Goods *goods){ 
 
-void menu(){
-	    cout<<"\n \t\t\t=========================\n";
-        cout<<"\n\t\t\t   WELCOME TO THE SHOP  \n";
-        cout<<"\n \t\t\t=========================\n\n";
-        cout<<"\n \t\t\t* * * * * * * * * * * * ";
-        cout<<"\n\t\t\t  1. SHOPPING LIST";
-        cout<<"\n\t\t\t  2. SHOPPING CART";
-        cout<<"\n\t\t\t  3. EXIT";
-        cout<<"\n\t\t\t* * * * * * * * * * * *\n";
-        cout<<"\n\t\t\t Enter Your choice: ";
-	
-	cin>>choose;
-	switch(choose){
-		case 1:
- 			
-		item();
-		cadd();
-		
-		back();
-		
-		switch(choose1){
-			case 1:
-				menu();
-			case 2:
-				exit(0);
-				break;
-		}
-		
-		case 2:
-		cart();	
-		case 3:
-		exit(0);
-		
-		break; 
-} 
-}
-void discount(){
-	if(totalprice>=300){
-		lastprice=totalprice*0.95;
-	}
-	else{
-		lastprice=totalprice;
-	}
-}
-void item(){
-cout<<"*********************************************"<<endl;
-	cout<<"   NO.                     Items                         Price *********"<<endl;
-		for (y = 0; y<8; y++)
-	cout<<"   "<<*(y + i)<<"********"<<*(y + p)<<"********"<<endl; 
-}
-void code(){
-	cout<<"Please input your code,if not,you can input \"no\""<<endl;
-	cin>>pc;
-} 
-void cart(){
-	
-	
-}
-void addinfo(){
-	cout<<"Please input a number that you want to add to your cart."<<endl;
-	cin>>n[0];
+    //goodList();
+
+    int code = 0,number = 0;
+
+    printf("Please enter the item number you want to remove:");
+
+    scanf("%d",&code);
+
+    printf("Please enter the quantity you want to remove:");
+
+    scanf("%d",&number);
+
+    int flag = 0;
+
+    for (int i = 0; i < 3; i ++) {
+
+        if (goods[i].code == code && goods[i].number - number > 0) {
+
+            goods[i].number -=number;
+
+            flag = 1;
+
+            printf("Successfully modified!\n");
+
+            printf("*****************************\n");
+
+            break;
+
+        }
+
+    }
+
+    if (flag == 0) {
+
+        printf("There are not enough items in the shopping cart.\n");
+
+    }
 
 }
-void add(){
-	cout<<"Do you want to continue add the items?y(1) or n(2)"<<endl;
-	cin>>s;
-		switch(s){
-	case 2:
-		menu();
-		break;
+
+
+
+int payTheBill(Goods *goods){
+
+    printf("***************************Items in current cart***********************\n");
+
+    double sum = 0;
+
+    for (int i = 0; i < 3; i++) {
+
+        if (goods[i].number > 0) {
+
+            printf("%d\t%s    \t%.2lf\t\t%.2lf\t\t%d\t\t%.2lf\n",goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price);
+
+            sum += goods[i].number*goods[i].discount*goods[i].price;
+
+        }
+
+    }
+
+    printf("Current total is%.2f\n",sum);
+
+    printf("***************************************************************\n");
+
+    return 0;
+
 }
+
+
+
+void showTheCart(Goods *goods){//显示购物车
+
+    printf("***************************Items in current cart***********************\n");
+
+    double sum = 0;
+
+    for (int i = 0; i < 3; i++) {
+
+        if (goods[i].number > 0) {
+
+            printf("%d\t%s    \t%.2lf\t\t%.2lf\t\t%d\t\t%.2lf\n",goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price);
+
+            sum += goods[i].number*goods[i].discount*goods[i].price;
+
+        }
+
+    }
+
+    printf("\n\t\tCurrent total is%.2f\n",sum);
+
+    printf("***************************************************************\n");
+
 }
-void cadd(){
-	addinfo();
-	add();
-	cout<<"Please input the number"<<endl;
-		cin>>n[1];
-		add();
-	cout<<"Please input the number"<<endl;
-		cin>>n[2];
-		add();
-	cout<<"Please input the number"<<endl;
-		cin>>n[3];
-		add();
-	cout<<"Please input the number"<<endl;
-		cin>>n[4];
-		add();
-	cout<<"Please input the number"<<endl;;
-		cin>>n[5];
-		add();
-	cout<<"Please input the number"<<endl;
-		cin>>n[6];
-		add();
-	cout<<"Please input the number"<<endl;
-		cin>>n[7];
-}
-void back(){
-	cout<<"If you want to go back to the menu,please input 1"<<endl;
-	cout<<"If you want exit the program,please input 2"<<endl;
-	cin>>choose1;
+
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+int main(int argc, const string * argv[]) {
+    Goods goods[8] = {
+
+        {1,"Microwave Oven 1.5L",299,0,0,299},
+        {2,"Tiers Shoe Rack  ",40,0,0,299},
+        {3,"Panasonic Iron",80,0,0,299}
+    	
+        
+        
+
+    }; 
+
+
+    mainInterface(goods);
+    printf("Thank you for your patronage.");
+    return 0;
 }
