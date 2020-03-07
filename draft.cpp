@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <cstring>
 using namespace std;
-void name(); //the function of name.
 void menu(); //the function of menu that users can choose.
 void discount();//the function of judge discount.
 void item();//the function of item list.
@@ -11,9 +11,10 @@ void cart();
 void back(); 
 void addinfo();
 void add();
+void cadd();
 
 
-int y,j[8]={1,2,3,4,5,6,7,8}, n[8], k = 1,lo, sum1 = 0, sum2;
+int y,j[8]={1,2,3,4,5,6,7,8}, n[8], k = 1,lo, s,u;
 string nama,pc;
 string i[8]={"Microwave Oven 1.5L",
 "Panasonic Iron",
@@ -28,20 +29,25 @@ int totalprice,lastprice,p[8]={299,40,80,50,12,24,40,10};
 int choose ,choose1, choose2, choose3, choose4, choose5;
 
 int main(){
-//	code();
-	
-//	name();
+/*	code();
+if (!strcmp(pc.c_str(), "staff"))
+    cout<<"staff";
+else if (!strcmp(pc.c_str(), "no"))
+    cout<<"no";
+else
+   cout<<"wrong";
+   */
 	lable:
 	menu();
 	switch(choose){
 		case 1:
  			
 		item();
-		addinfo();
-		add();
+		cadd();
 		for(lo=0;lo<8;lo++)
 		cout<<n[lo];
-		/*back();
+		back();
+		
 		switch(choose1){
 			case 1:
 				goto lable;
@@ -55,7 +61,7 @@ int main(){
 		case 3:
 		exit(0);
 		
-		*/	break; 
+		break; 
 	}
 	
 	
@@ -67,10 +73,7 @@ int main(){
 
 
 
-void name(){
-	cout<<"Please input your name:"<<endl; 
-	cin>>nama;
-}
+
 void menu(){
 	cout<<"***********************************"<<endl;
 	cout<<"*****Welcome to online shopping****"<<endl;
@@ -100,7 +103,7 @@ void code(){
 	cin>>pc;
 } 
 void cart(){
-
+	
 	
 }
 void addinfo(){
@@ -109,11 +112,40 @@ void addinfo(){
 
 }
 void add(){
-while(k<8){
-cout<<"The item has been added to your shopping cart,if you want to add another item,please choose the number";
-cin>>n[k];
-++k;
+	cout<<"Do you want to continue add the items?y(1) or n(2)"<<endl;
+	cin>>s;
+	switch(s){
+	case 1:
+		cadd();
+		break;
+	case 2:
+		menu();
+		break;
 }
+}
+void cadd(){
+	addinfo();
+		add();
+	cout<<"Please input the number"<<endl;
+		cin>>n[1];
+		add();
+	cout<<"Please input the number"<<endl;
+		cin>>n[2];
+		add();
+	cout<<"Please input the number"<<endl;
+		cin>>n[3];
+		add();
+	cout<<"Please input the number"<<endl;
+		cin>>n[4];
+		add();
+	cout<<"Please input the number"<<endl;;
+		cin>>n[5];
+		add();
+	cout<<"Please input the number"<<endl;
+		cin>>n[6];
+		add();
+	cout<<"Please input the number"<<endl;
+		cin>>n[7];
 }
 void back(){
 	cout<<"If you want to go back to the menu,please input 1"<<endl;
