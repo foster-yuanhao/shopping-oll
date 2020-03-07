@@ -124,11 +124,11 @@ void addToCart(Goods *goods){
 
     int code = 0, number = 0;
 
-    printf("Please input the number:");
+    printf("Please choose the item:");
 
     scanf("%d",&code);
 
-    printf("Please input the quantity");
+    printf("How much do you want ?");
 
     scanf("%d",&number);
 
@@ -137,7 +137,7 @@ void addToCart(Goods *goods){
         if (goods[i].code == code) {
             goods[i].number +=number;
             flag = 1;
-            printf("The items has been added successfully! !!\n");
+            printf("The items have been added successfully! !!\n");
             printf("*****************************\n");
 
             break;
@@ -162,11 +162,11 @@ void removeFromCart(Goods *goods){
 
     int code = 0,number = 0;
 
-    printf("Please enter the item number you want to remove:");
+    printf("Please enter the number of the item you want to remove:");
 
     scanf("%d",&code);
 
-    printf("Please enter the quantity you want to remove:");
+    printf("How much you want to remove ?:");
 
     scanf("%d",&number);
 
