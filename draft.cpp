@@ -16,15 +16,17 @@ void cadd();
 
 int y,j[8]={1,2,3,4,5,6,7,8}, n[8], k = 1,lo, s,u;
 string nama,pc;
-string i[8]={"Microwave Oven 1.5L",
-"Panasonic Iron",
-"Rice Cooker 1L",
-"Hair Dryer",
-"Tiers Shoe Rack",
-"Kitchen L Shape Carpet",
-"San Disk Ultra Micro SD 32GB",
-"Mini Bluetooth Speaker"
-};  
+string i[8]={
+
+"1.        Microwave Oven 1.5L                 ",
+"2.        Tiers Shoe Rack                     ",
+"3.        Panasonic Iron                      ",
+"4.        Kitchen L Shape Carpet              ",
+"5.        Rice Cooker 1L                      ",
+"6.        San Disk Ultra Micro SD 32GB        ",
+"7.        Hair Dryer                          ",
+"8.        Mini Bluetooth Speaker              ",
+};
 int totalprice,lastprice,p[8]={299,40,80,50,12,24,40,10};
 int choose ,choose1, choose2, choose3, choose4, choose5;
 
@@ -53,13 +55,16 @@ else
 
 
 void menu(){
-	cout<<"***********************************"<<endl;
-	cout<<"*****Welcome to online shopping****"<<endl;
-	cout<<"***********************************"<<endl;
-	cout<<"   *****   1.shop list *****"<<endl;
-	cout<<"   ****  2.shopping cart *****"<<endl;	
-	cout<<"   ********  3.exit *******"<<endl;
-	cout<<"***********************************"<<endl;
+	    cout<<"\n \t\t\t=========================\n";
+        cout<<"\n\t\t\t   WELCOME TO THE SHOP  \n";
+        cout<<"\n \t\t\t=========================\n\n";
+        cout<<"\n \t\t\t* * * * * * * * * * * * ";
+        cout<<"\n\t\t\t  1. SHOPPING LIST";
+        cout<<"\n\t\t\t  2. SHOPPING CART";
+        cout<<"\n\t\t\t  3. EXIT";
+        cout<<"\n\t\t\t* * * * * * * * * * * *\n";
+        cout<<"\n\t\t\t Enter Your choice: ";
+	
 	cin>>choose;
 	switch(choose){
 		case 1:
@@ -95,9 +100,9 @@ void discount(){
 }
 void item(){
 cout<<"*********************************************"<<endl;
-	cout<<"**NO.****Items               Price *********"<<endl;
+	cout<<"   NO.                     Items                         Price *********"<<endl;
 		for (y = 0; y<8; y++)
-	cout<<"**"<<*(y + j)<<"**"<<*(y + i)<<"********"<<*(y + p)<<"********"<<endl; 
+	cout<<"   "<<*(y + i)<<"********"<<*(y + p)<<"********"<<endl; 
 }
 void code(){
 	cout<<"Please input your code,if not,you can input \"no\""<<endl;
@@ -112,13 +117,10 @@ void addinfo(){
 	cin>>n[0];
 
 }
-void add(){ 
+void add(){
 	cout<<"Do you want to continue add the items?y(1) or n(2)"<<endl;
 	cin>>s;
-	switch(s){
-	case 1:
-		cadd();
-		break;
+		switch(s){
 	case 2:
 		menu();
 		break;
@@ -126,7 +128,7 @@ void add(){
 }
 void cadd(){
 	addinfo();
-		add();
+	add();
 	cout<<"Please input the number"<<endl;
 		cin>>n[1];
 		add();
@@ -147,7 +149,6 @@ void cadd(){
 		add();
 	cout<<"Please input the number"<<endl;
 		cin>>n[7];
-		add(); 
 }
 void back(){
 	cout<<"If you want to go back to the menu,please input 1"<<endl;
