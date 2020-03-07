@@ -37,32 +37,10 @@ else if (!strcmp(pc.c_str(), "no"))
 else
    cout<<"wrong";
    */
-	lable:
+
 	menu();
-	switch(choose){
-		case 1:
- 			
-		item();
-		cadd();
-		for(lo=0;lo<8;lo++)
-		cout<<n[lo];
-		back();
-		
-		switch(choose1){
-			case 1:
-				goto lable;
-			case 2:
-				exit(0);
-				break;
-		}
-		
-		case 2:
-		cart();	
-		case 3:
-		exit(0);
-		
-		break; 
-	}
+	
+
 	
 	
 
@@ -83,7 +61,30 @@ void menu(){
 	cout<<"   ********  3.exit *******"<<endl;
 	cout<<"***********************************"<<endl;
 	cin>>choose;
+	switch(choose){
+		case 1:
+ 			
+		item();
+		cadd();
+		
+		back();
+		
+		switch(choose1){
+			case 1:
+				menu();
+			case 2:
+				exit(0);
+				break;
+		}
+		
+		case 2:
+		cart();	
+		case 3:
+		exit(0);
+		
+		break; 
 } 
+}
 void discount(){
 	if(totalprice>=300){
 		lastprice=totalprice*0.95;
@@ -111,7 +112,7 @@ void addinfo(){
 	cin>>n[0];
 
 }
-void add(){
+void add(){ 
 	cout<<"Do you want to continue add the items?y(1) or n(2)"<<endl;
 	cin>>s;
 	switch(s){
@@ -146,6 +147,7 @@ void cadd(){
 		add();
 	cout<<"Please input the number"<<endl;
 		cin>>n[7];
+		add(); 
 }
 void back(){
 	cout<<"If you want to go back to the menu,please input 1"<<endl;
