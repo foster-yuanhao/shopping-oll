@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
+#include <stdio.h>
+#include<iostream>
 using namespace std;
 typedef struct Goods{
 int code;
@@ -65,7 +67,7 @@ void mainInterface(Goods *goods){
 int select = 0;
 do{
 menu();
-cout<<"\n\t\t\t Enter Your choice: ";
+cout<<"\n\t\t\t Choose a number: ";
 scanf("%d",&select);
 switch (select) {
       case 6:
@@ -104,7 +106,7 @@ switch (select) {
 
             default:
 
-                cout<<"error!!\nPlease enter again：\n";
+                cout<<"error!!\nPlease enter again:\n";
                 break;
 
         }
@@ -135,7 +137,7 @@ void addToCart(Goods *goods){
         if (goods[i].code == code) {
             goods[i].number +=number;
             flag = 1;
-            printf("Items added successfully! !!\n");
+            printf("The items has been added successfully! !!\n");
             printf("*****************************\n");
 
             break;
@@ -226,7 +228,7 @@ int payTheBill(Goods *goods){
 
 
 
-void showTheCart(Goods *goods){//显示购物车
+void showTheCart(Goods *goods){//?????
 
     printf("***************************Items in current cart***********************\n");
 
@@ -249,9 +251,6 @@ void showTheCart(Goods *goods){//显示购物车
     printf("***************************************************************\n");
 
 }
-
-#include <stdio.h>
-#include<iostream>
 using namespace std;
 int main(int argc, const string * argv[]) {
     Goods goods[8] = {
