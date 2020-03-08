@@ -28,8 +28,8 @@ void menu(){
         cout<<"\n\t\t\t  1. SHOPPING LIST";
         cout<<"\n\t\t\t  2. ADD ITEMS";
         cout<<"\n\t\t\t  3. DEL ITEMS";
-		cout<<"\n\t\t\t  4. SHOPPING CART";
-		cout<<"\n\t\t\t  5. CHECK OUT";
+	cout<<"\n\t\t\t  4. SHOPPING CART";
+	cout<<"\n\t\t\t  5. CHECK OUT";
         cout<<"\n\t\t\t  6. EXIT";
         cout<<"\n\t\t\t* * * * * * * * * * * *\n";
        
