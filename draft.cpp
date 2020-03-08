@@ -265,6 +265,6 @@ int main(int argc, const char * argv[]) {
 
 
     mainInterface(goods);
-    cout<<"Thank you for your patronage.";
+    cout<<"Thanks for choosing us.";
     return 0;
 }
