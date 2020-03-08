@@ -65,7 +65,7 @@ int select = 0;
 do{
 menu();
 cout<<"\n\t\t\t Choose a number: ";
-scanf("%d",&select);
+cin>>select;
 switch (select) {
       case 6:
 			
@@ -199,7 +199,7 @@ void removeFromCart(Goods *goods){
 
 int payTheBill(Goods *goods){
 
-    cout<<"***************************Items in current cart***********************\n";
+    cout<<"----------------------------Items in current cart-----------------------\n";
 
     double sum = 0;
 
@@ -207,7 +207,7 @@ int payTheBill(Goods *goods){
 
         if (goods[i].number > 0) {
 
-            cout<<goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price;
+            cout<<goods[i].code<<goods[i].name<<goods[i].price<<goods[i].number<<goods[i].number*goods[i].price;
 
             sum += goods[i].number*goods[i].discount*goods[i].price;
 
@@ -217,7 +217,7 @@ int payTheBill(Goods *goods){
 
     cout<<"Current total is\n"<<sum;
 
-    cout<<"***************************************************************\n";
+    cout<<"________________________________________________________________\n";
 
     return 0;
 
@@ -227,25 +227,25 @@ int payTheBill(Goods *goods){
 
 void showTheCart(Goods *goods){//?????
 
-    cout<<("***************************Items in current cart***********************\n");
+    cout<<("----------------------------Items in current cart-----------------------\n");
 
     double sum = 0;
 
     for (int i = 0; i < 3; i++) {
 
         if (goods[i].number > 0) {
-
-            cout<<goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price;
-
-            sum += goods[i].number*goods[i].discount*goods[i].price;
+            cout<<"item no                  price  amount   total price"<<endl;
+            cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price;
+             
+			sum += goods[i].number*goods[i].discount*goods[i].price;
 
         }
 
     }
 
-    cout<<"\n\t\tCurrent total is\n"<<sum;
+    cout<<"\n\t\tCurrent total is  "<<endl<<sum;
 
-    cout<<"***************************************************************\n";
+    cout<<"________________________________________________________________\n";
 
 }
 using namespace std;
@@ -253,8 +253,8 @@ int main(int argc, const char * argv[]) {
     Goods goods[8] = {
 
         {1,"Microwave Oven 1.5L",299,0,0,299},
-        {2,"Tiers Shoe Rack  ",40,0,0,299},
-        {3,"Panasonic Iron",80,0,0,299}
+        {2,"Tiers Shoe Rack  ",12,0,0,299},
+        {3,"Panasonic Iron",40,0,0,299}
     	
         
         
