@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <cstring>
 using namespace std;
 typedef struct Goods{
 int code;
@@ -15,7 +17,8 @@ void menu();
 void goodList();
 void addToCart(Goods *goods);
 void removeFromCart(Goods *goods);
-int payTheBill(Goods *goods);
+int payTheBills(Goods *goods);
+int payTheBillc(Goods *goods);
 void showTheCart(Goods *goods);
 void menu(){
     	cout<<"\n \t\t\t=========================\n";
@@ -62,6 +65,7 @@ string shopping[8]={
 }
 void mainInterface(Goods *goods){
 int select = 0;
+string pc;
 do{
 menu();
 cout<<"\n\t\t\t Choose a number: ";
@@ -78,8 +82,17 @@ switch (select) {
                 break;
 
             case 5:
+				cout<<"Please input your code,if not,you can input \"no\""<<endl;
+				cin>>pc;
+				if (!strcmp(pc.c_str(), "staff"))
+				select = payTheBills(goods);
 
-                select = payTheBill(goods);
+				else if (!strcmp(pc.c_str(), "no"))
+
+  				select = payTheBillc(goods);
+				else
+   				cout<<"wrong,please input again";
+                
 
                 break;
 
@@ -197,9 +210,9 @@ void removeFromCart(Goods *goods){
 
 
 
-int payTheBill(Goods *goods){
+int payTheBillc(Goods *goods){
 
-    cout<<"----------------------------Items in current cart-----------------------\n";
+    cout<<"***************************Items in current cart***********************\n";
 
     double sum = 0;
 
@@ -207,45 +220,78 @@ int payTheBill(Goods *goods){
 
         if (goods[i].number > 0) {
 
-            cout<<goods[i].code<<goods[i].name<<goods[i].price<<goods[i].number<<goods[i].number*goods[i].price;
+             cout<<"item no                  price  amount   total price"<<endl;
+            cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price;
+             
+            if(goods[i].number*goods[i].price>=300){
+            	sum+=goods[i].number*goods[i].price*0.95;
+			}
+			else{
+			 sum += goods[i].number*goods[i].price;	
+			}
 
-            sum += goods[i].number*goods[i].discount*goods[i].price;
 
         }
 
     }
 
-    cout<<"Current total is\n"<<sum;
+    cout<<"Current total is"<<sum;
 
-    cout<<"________________________________________________________________\n";
+    cout<<"***************************************************************\n";
 
     return 0;
 
 }
 
+int payTheBills(Goods *goods){
 
-
-void showTheCart(Goods *goods){//?????
-
-    cout<<("----------------------------Items in current cart-----------------------\n");
+    cout<<"***************************Items in current cart***********************\n";
 
     double sum = 0;
 
     for (int i = 0; i < 3; i++) {
 
         if (goods[i].number > 0) {
+			
             cout<<"item no                  price  amount   total price"<<endl;
             cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price;
              
-			sum += goods[i].number*goods[i].discount*goods[i].price;
+             
+            sum += goods[i].number*goods[i].price*0.95;
 
         }
 
     }
 
-    cout<<"\n\t\tCurrent total is  "<<endl<<sum;
+    cout<<"Current total is"<<sum;
 
-    cout<<"________________________________________________________________\n";
+    cout<<"***************************************************************\n";
+
+    return 0;
+
+}
+
+void showTheCart(Goods *goods){//?????
+
+    cout<<("***************************Items in current cart***********************\n");
+
+    double sum = 0;
+
+    for (int i = 0; i < 3; i++) {
+
+        if (goods[i].number > 0) {
+ cout<<"item no                  price  amount   total price"<<endl;
+            cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price;
+             
+            sum += goods[i].number*goods[i].price;
+
+        }
+
+    }
+
+    cout<<"\n\t\tCurrent total is"<<sum;
+
+    cout<<"***************************************************************\n";
 
 }
 using namespace std;
