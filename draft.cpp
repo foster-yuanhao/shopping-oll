@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include <iostream>
 #include <string>
-#include<iostream>
 using namespace std;
 typedef struct Goods{
 int code;
