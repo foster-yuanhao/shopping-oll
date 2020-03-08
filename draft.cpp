@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
-#include <stdio.h>
 #include<iostream>
 using namespace std;
 typedef struct Goods{
@@ -28,8 +27,8 @@ void menu(){
         cout<<"\n\t\t\t  1. SHOPPING LIST";
         cout<<"\n\t\t\t  2. ADD ITEMS";
         cout<<"\n\t\t\t  3. DEL ITEMS";
-	cout<<"\n\t\t\t  4. SHOPPING CART";
-	cout<<"\n\t\t\t  5. CHECK OUT";
+		cout<<"\n\t\t\t  4. SHOPPING CART";
+		cout<<"\n\t\t\t  5. CHECK OUT";
         cout<<"\n\t\t\t  6. EXIT";
         cout<<"\n\t\t\t* * * * * * * * * * * *\n";
        
@@ -124,21 +123,21 @@ void addToCart(Goods *goods){
 
     int code = 0, number = 0;
 
-    printf("Please choose the item:");
+    cout<<("Please choose the item:");
 
-    scanf("%d",&code);
+    cin>>code;
 
-    printf("How much do you want ?");
+    cout<<"How much do you want ?";
 
-    scanf("%d",&number);
+    cin>>number;
 
     int flag = 0;
     for (int i = 0; i < 3; i ++) {
         if (goods[i].code == code) {
             goods[i].number +=number;
             flag = 1;
-            printf("The items have been added successfully! !!\n");
-            printf("*****************************\n");
+            cout<<"The items have been added successfully! !!\n";
+            cout<<"*****************************\n";
 
             break;
 
@@ -148,7 +147,7 @@ void addToCart(Goods *goods){
 
     if (flag == 0) {
 
-            printf("Sorry, we do not have the items you want to buy\n");
+            cout<<"Sorry, we do not have the items you want to buy\n";
 
         }
 
@@ -162,13 +161,13 @@ void removeFromCart(Goods *goods){
 
     int code = 0,number = 0;
 
-    printf("Please enter the number of the item you want to remove:");
+    cout<<"Please enter the number of the item you want to remove:";
 
-    scanf("%d",&code);
+    cin>>code;
 
-    printf("How much you want to remove ?:");
+    cout<<"How much you want to remove ?";
 
-    scanf("%d",&number);
+    cin>>number;
 
     int flag = 0;
 
@@ -180,9 +179,9 @@ void removeFromCart(Goods *goods){
 
             flag = 1;
 
-            printf("Successfully modified!\n");
+            cout<<"Successfully modified!\n";
 
-            printf("*****************************\n");
+            cout<<"*****************************\n";
 
             break;
 
@@ -192,7 +191,7 @@ void removeFromCart(Goods *goods){
 
     if (flag == 0) {
 
-        printf("There are not enough items in the shopping cart.\n");
+        cout<<"There are not enough items in the shopping cart.\n";
 
     }
 
@@ -202,7 +201,7 @@ void removeFromCart(Goods *goods){
 
 int payTheBill(Goods *goods){
 
-    printf("***************************Items in current cart***********************\n");
+    cout<<"***************************Items in current cart***********************\n";
 
     double sum = 0;
 
@@ -210,7 +209,7 @@ int payTheBill(Goods *goods){
 
         if (goods[i].number > 0) {
 
-            printf("%d\t%s    \t%.2lf\t\t%.2lf\t\t%d\t\t%.2lf\n",goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price);
+            cout<<goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price;
 
             sum += goods[i].number*goods[i].discount*goods[i].price;
 
@@ -218,9 +217,9 @@ int payTheBill(Goods *goods){
 
     }
 
-    printf("Current total is%.2f\n",sum);
+    cout<<"Current total is\n"<<sum;
 
-    printf("***************************************************************\n");
+    cout<<"***************************************************************\n";
 
     return 0;
 
@@ -230,7 +229,7 @@ int payTheBill(Goods *goods){
 
 void showTheCart(Goods *goods){//?????
 
-    printf("***************************Items in current cart***********************\n");
+    cout<<("***************************Items in current cart***********************\n");
 
     double sum = 0;
 
@@ -238,7 +237,7 @@ void showTheCart(Goods *goods){//?????
 
         if (goods[i].number > 0) {
 
-            printf("%d\t%s    \t%.2lf\t\t%.2lf\t\t%d\t\t%.2lf\n",goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price);
+            cout<<goods[i].code,goods[i].name,goods[i].price,goods[i].discount,goods[i].number,goods[i].number*goods[i].discount*goods[i].price;
 
             sum += goods[i].number*goods[i].discount*goods[i].price;
 
@@ -246,13 +245,13 @@ void showTheCart(Goods *goods){//?????
 
     }
 
-    printf("\n\t\tCurrent total is%.2f\n",sum);
+    cout<<"\n\t\tCurrent total is\n"<<sum;
 
-    printf("***************************************************************\n");
+    cout<<"***************************************************************\n";
 
 }
 using namespace std;
-int main(int argc, const string * argv[]) {
+int main(int argc, const char * argv[]) {
     Goods goods[8] = {
 
         {1,"Microwave Oven 1.5L",299,0,0,299},
@@ -266,6 +265,6 @@ int main(int argc, const string * argv[]) {
 
 
     mainInterface(goods);
-    printf("Thank you for your patronage.");
+    cout<<"Thank you for your patronage.";
     return 0;
 }
