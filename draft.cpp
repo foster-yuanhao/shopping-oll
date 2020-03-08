@@ -4,7 +4,7 @@
 #include <cstring>
 using namespace std;
 typedef struct Goods{
-int code;
+int code;//the staff code is STAFF
 char name[20];
 double price;
 double discount;
@@ -82,9 +82,9 @@ switch (select) {
                 break;
 
             case 5:
-				cout<<"Please input your code,if not,you can input \"no\""<<endl;
+				cout<<"Please input your staff code,if you are a normal customer,you can input no"<<endl;
 				cin>>pc;
-				if (!strcmp(pc.c_str(), "staff"))
+				if (!strcmp(pc.c_str(), "STAFF"))
 				select = payTheBills(goods);
 
 				else if (!strcmp(pc.c_str(), "no"))
@@ -245,16 +245,16 @@ int payTheBillc(Goods *goods){
 
 int payTheBills(Goods *goods){
 
-    cout<<"***************************Items in current cart***********************\n";
-
+    cout<<"___________________________Items in current cart___________________________\n";
+    cout<<"item no                  price  amount   total price"<<endl;
     double sum = 0;
 
     for (int i = 0; i < 3; i++) {
 
         if (goods[i].number > 0) {
 			
-            cout<<"item no                  price  amount   total price"<<endl;
-            cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price;
+            
+            cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price<<endl;
              
              
             sum += goods[i].number*goods[i].price*0.95;
@@ -263,9 +263,9 @@ int payTheBills(Goods *goods){
 
     }
 
-    cout<<"Current total is"<<sum;
+    cout<<"Current total is  "<<sum<<endl;
 
-    cout<<"***************************************************************\n";
+    cout<<"_______________________________________________________________\n";
 
     return 0;
 
@@ -273,15 +273,15 @@ int payTheBills(Goods *goods){
 
 void showTheCart(Goods *goods){//?????
 
-    cout<<("***************************Items in current cart***********************\n");
-
+    cout<<("___________________________Items in current cart___________________________\n");
+    cout<<"item no                  price  amount   total price"<<endl;
     double sum = 0;
 
     for (int i = 0; i < 3; i++) {
 
         if (goods[i].number > 0) {
- cout<<"item no                  price  amount   total price"<<endl;
-            cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price;
+
+            cout<<goods[i].code<<"       "<<goods[i].name<<goods[i].price<<"       "<<goods[i].number<<"         "<<goods[i].number*goods[i].price<<endl;
              
             sum += goods[i].number*goods[i].price;
 
@@ -289,23 +289,23 @@ void showTheCart(Goods *goods){//?????
 
     }
 
-    cout<<"\n\t\tCurrent total is"<<sum;
+    cout<<"\n\t\tCurrent total is  "<<sum<<endl;
 
-    cout<<"***************************************************************\n";
+    cout<<"_______________________________________________________________\n";
 
 }
 using namespace std;
 int main(int argc, const char * argv[]) {
     Goods goods[8] = {
-
-        {1,"Microwave Oven 1.5L",299,0,0,299},
-        {2,"Tiers Shoe Rack  ",12,0,0,299},
-        {3,"Panasonic Iron",40,0,0,299}
-    	
-        
-        
-
-    }; 
+        {1,"Microwave Oven 1.5L             ",299,0,0,299},
+        {2,"Tiers Shoe Rack                 ",12 ,0,0,299},
+        {3,"Panasonic Iron                  ",40 ,0,0,299},
+    	{4,"Kitchen L Shape Carpet          ",24 ,0,0,299},
+		{5,"Rice Cooker 1L                  ",80 ,0,0,299},
+		{6,"San Disk Ultra Micro SD 32GB    ",40 ,0,0,299},
+		{7,"Hair Dryer                      ",50 ,0,0,299},
+		{8,"Mini Bluetooth Speaker          ",10 ,0,0,299},		
+};
 
 
     mainInterface(goods);
