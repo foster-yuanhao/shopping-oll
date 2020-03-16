@@ -59,7 +59,7 @@ else{
         cin>>menu;
         if (menu==1)
         cout<<"**********       NO.          ITEM NAME                        **********\n";
-        cout<<"**********        1.      Microwave Oven 1.5L                  **********\n";//aq
+        cout<<"**********        1.      Microwave Oven 1.5L                  **********\n";
         cout<<"**********        2.      Tiers Shoe Rack                      **********\n";
         cout<<"**********        3.      Panasonic Iron                       **********\n";
         cout<<"**********        4.      Kitchen L Shape Carpet               **********\n";
@@ -69,50 +69,49 @@ else{
         cout<<"**********        8.      Mini Bluetooth Speaker               **********\n";
        	cout<<"Do you want to add any items?\n";
         cin>>a;
-        cout<<"doyouwant to contiune add?1-yes 2-no";
+        cout<<"do you want to contiune add?1-yes 2-no";
         cin>>ju;
         if(ju==1){
 		cout<<"Do you want to add any items?\n";
         cin>>b;
         	switch(b)
 	    case 1 : 
-	    	cout<<"how many items quilty?";
+	    	cout<<"how many items do you want?";
 	    	cin>>aq;
-	    	cout<<"you have add mic succssful";
+	    	cout<<"you have added microwave Oven 1.5L succssful";
 	    	break;
         case 2 :
-        		cout<<"how many items quilty?";
+        		cout<<"how many items do you want?";
 	    	cin>>bq;
-        	cout<<"you have add mic succssful";
+        	cout<<"you have added tiers Shoe Rack succssful";
 	        break;	
 		case 3 :
-				cout<<"how many items quilty?";
+			cout<<"how many items do you want?";
 	    	cin>>cq;
 			cout<<"you have add mic succssful";
 			break;
         case 4 :
-        		cout<<"how many items quilty?";
+        		cout<<"how many items do you want?";
 	    	cin>>dq;
         	cout<<"you have add mic succssful";
         	break;
         case 5 :
-        		cout<<"how many items quilty?";
+        		cout<<"how many items do you want?";
 	    	cin>>eq;
         	cout<<"you have add mic succssful";
         	break;
         case 6 :
-        		cout<<"how many items quilty?";
+        		cout<<"how many items do you want?";
 	    	cin>>fq;
         	break;
         case 7 :
-        		cout<<"how many items quilty?";
+        		cout<<"how many items do you want?";
 	    	cin>>gq;
         	break;
         case 8 :
-        		cout<<"how many items quilty?";
+        		cout<<"how many items do you want?";
 	    	cin>>hq;
         	break;
 		}
 }
 }
-	
