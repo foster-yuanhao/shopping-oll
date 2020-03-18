@@ -274,17 +274,17 @@ if (responce==1){
 		cout<<hq<<endl;
 		}
         if (menu==1){
-        cout<<"_________________________________________________________________________\n";
-        cout<<"**********       NO.          ITEM NAME                        **********\n";
-        cout<<"**********        1.      Microwave Oven 1.5L                  **********\n";
-        cout<<"**********        2.      Tiers Shoe Rack                      **********\n";
-        cout<<"**********        3.      Panasonic Iron                       **********\n";
-        cout<<"**********        4.      Kitchen L Shape Carpet               **********\n";
-        cout<<"**********        5.      Rice Cooker 1L                       **********\n";
-        cout<<"**********        6.      San Disk Ultra Micro SD 32GB         **********\n";
-        cout<<"**********        7.      Hair Dryer                           **********\n";
-        cout<<"**********        8.      Mini Bluetooth Speaker               **********\n";
-        cout<<"_________________________________________________________________________\n";
+        cout<<"__________________________________________________________________________\n";
+        cout<<"**********   |    NO.          ITEM NAME                   |    **********\n";
+        cout<<"**********   |    1.      Microwave Oven 1.5L              |    **********\n";
+        cout<<"**********   |    2.      Tiers Shoe Rack                  |    **********\n";
+        cout<<"**********   |    3.      Panasonic Iron                   |    **********\n";
+        cout<<"**********   |    4.      Kitchen L Shape Carpet           |    **********\n";
+        cout<<"**********   |    5.      Rice Cooker 1L                   |    **********\n";
+        cout<<"**********   |    6.      San Disk Ultra Micro SD 32GB     |    **********\n";
+        cout<<"**********   |    7.      Hair Dryer                       |    **********\n";
+        cout<<"**********   |    8.      Mini Bluetooth Speaker           |    **********\n";
+        cout<<"_____________|_____________________________________________|______________\n";
 	    cout<<"                  Do you want to add any items? 1-Yes 2-No \n";
         cin>>additems;
         if(additems==1){
@@ -666,18 +666,17 @@ else{
 		}
 		}
         if (menu==1){
-        	
-		cout<<"_________________________________________________________________________\n";
-        cout<<"**********       NO.          ITEM NAME                        **********\n";
-        cout<<"**********        1.      Microwave Oven 1.5L                  **********\n";
-        cout<<"**********        2.      Tiers Shoe Rack                      **********\n";
-        cout<<"**********        3.      Panasonic Iron                       **********\n";
-        cout<<"**********        4.      Kitchen L Shape Carpet               **********\n";
-        cout<<"**********        5.      Rice Cooker 1L                       **********\n";
-        cout<<"**********        6.      San Disk Ultra Micro SD 32GB         **********\n";
-        cout<<"**********        7.      Hair Dryer                           **********\n";
-        cout<<"**********        8.      Mini Bluetooth Speaker               **********\n";
-        cout<<"_________________________________________________________________________\n";
+        cout<<"__________________________________________________________________________\n";
+        cout<<"**********   |    NO.          ITEM NAME                   |    **********\n";
+        cout<<"**********   |    1.      Microwave Oven 1.5L              |    **********\n";
+        cout<<"**********   |    2.      Tiers Shoe Rack                  |    **********\n";
+        cout<<"**********   |    3.      Panasonic Iron                   |    **********\n";
+        cout<<"**********   |    4.      Kitchen L Shape Carpet           |    **********\n";
+        cout<<"**********   |    5.      Rice Cooker 1L                   |    **********\n";
+        cout<<"**********   |    6.      San Disk Ultra Micro SD 32GB     |    **********\n";
+        cout<<"**********   |    7.      Hair Dryer                       |    **********\n";
+        cout<<"**********   |    8.      Mini Bluetooth Speaker           |    **********\n";
+        cout<<"_____________|_____________________________________________|_______________\n";
 	    cout<<"                  Do you want to add any items? 1-Yes 2-No \n";
         cin>>additems;
         if(additems==1){
