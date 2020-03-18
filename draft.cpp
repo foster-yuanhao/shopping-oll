@@ -7,7 +7,10 @@ int responce;
 int menu;//for the item list
 int shopping;
 int ju;
+int tq;
+int chushihua;
 int a,aq,b,bq,c,cq,d,dq,e,eq,f,fq,g,gq,h,hq;
+int num;
 string staff; //the staff code.
 int main(){
     cout<<"----------are you a staff member 1.Yes 2.No----------"<<endl;
@@ -57,9 +60,11 @@ else{
         cout<<"\n\t\t\t       4. EXIT";
         cout<<"\n\t\t\t    * * * * * * * * * * * *\n";
         cin>>menu;
-        if (menu==1)
+        if (menu==1){
+        	
+		
         cout<<"**********       NO.          ITEM NAME                        **********\n";
-        cout<<"**********        1.      Microwave Oven 1.5L                  **********\n";
+        cout<<"**********        1.      Microwave Oven 1.5L                  **********\n";//aq
         cout<<"**********        2.      Tiers Shoe Rack                      **********\n";
         cout<<"**********        3.      Panasonic Iron                       **********\n";
         cout<<"**********        4.      Kitchen L Shape Carpet               **********\n";
@@ -67,51 +72,128 @@ else{
         cout<<"**********        6.      San Disk Ultra Micro SD 32GB         **********\n";
         cout<<"**********        7.      Hair Dryer                           **********\n";
         cout<<"**********        8.      Mini Bluetooth Speaker               **********\n";
-       	cout<<"Do you want to add any items?\n";
-        cin>>a;
-        cout<<"do you want to contiune add?1-yes 2-no";
-        cin>>ju;
-        if(ju==1){
-		cout<<"Do you want to add any items?\n";
-        cin>>b;
-        	switch(b)
-	    case 1 : 
-	    	cout<<"how many items do you want?";
-	    	cin>>aq;
-	    	cout<<"you have added microwave Oven 1.5L succssful";
-	    	break;
-        case 2 :
-        		cout<<"how many items do you want?";
-	    	cin>>bq;
-        	cout<<"you have added tiers Shoe Rack succssful";
-	        break;	
-		case 3 :
-			cout<<"how many items do you want?";
-	    	cin>>cq;
-			cout<<"you have add mic succssful";
-			break;
-        case 4 :
-        		cout<<"how many items do you want?";
-	    	cin>>dq;
-        	cout<<"you have add mic succssful";
-        	break;
-        case 5 :
-        		cout<<"how many items do you want?";
-	    	cin>>eq;
-        	cout<<"you have add mic succssful";
-        	break;
-        case 6 :
-        		cout<<"how many items do you want?";
-	    	cin>>fq;
-        	break;
-        case 7 :
-        		cout<<"how many items do you want?";
-	    	cin>>gq;
-        	break;
-        case 8 :
-        		cout<<"how many items do you want?";
-	    	cin>>hq;
-        	break;
+	    cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+        cout<<"item unmber";
+		cin>>a; 
+        cout<<"how many items quilty?";
+        cin>>aq;
+        cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+        cout<<"item unmber";
+		cin>>b; 
+        cout<<"how many items quilty?";
+        cin>>bq;
+        cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+   		cout<<"item unmber";
+		cin>>c; 
+        cout<<"how many items quilty?";
+        cin>>cq;
+		cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+        cout<<"item unmber";
+		cin>>d; 
+        cout<<"how many items quilty?";
+        cin>>dq;
+        cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+        cout<<"item unmber";
+		cin>>e; 
+        cout<<"how many items quilty?";
+        cin>>eq;
+        cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+        	cout<<"item unmber";
+		cin>>f; 
+        cout<<"how many items quilty?";
+        cin>>fq;
+         cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+        		cout<<"item unmber";
+		cin>>g; 
+        cout<<"how many items quilty?";
+        cin>>gq;
+          cout<<"Do you want to add any items?1-y 2-n\n";
+        cin>>chushihua;
+        if(chushihua==1){
+        			cout<<"item unmber";
+		cin>>h; 
+        cout<<"how many items quilty?";
+        cin>>hq;
+        goto startcus;
+        }
+     
+		else{
+		
+			goto startcus;
 		}
+        }
+
+		else{
+			
+			goto startcus;
+		}
+        }
+        
+     
+		
+		else{
+		
+			goto startcus;
+		}
+        }
+	
+		
+		else{
+	
+			goto startcus;
+		}	
+        }
+     
+		
+		else{
+
+			goto startcus;
+		}
+			}
+        
+   
+		
+		else{
+	
+			goto startcus;
+		}  	
+    }
+ 
+		
+		else{
+
+			goto startcus;
+		}
+    
+		}
+		
+		else{
+			goto startcus;
+		}
+      
+		
+	 		
+	
+
+
 }
 }
+}
+ 
+
+
+	
