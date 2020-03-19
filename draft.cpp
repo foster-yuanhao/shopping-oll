@@ -45,25 +45,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(a){
@@ -134,25 +134,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(b){
@@ -222,25 +222,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(c){
@@ -311,25 +311,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(d){
@@ -401,25 +401,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(e){
@@ -490,25 +490,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(f){
@@ -579,25 +579,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 			switch(g){
@@ -668,25 +668,25 @@ if (responce==1){
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 			switch(h){
@@ -1158,25 +1158,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(a){
@@ -1247,25 +1247,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(b){
@@ -1335,25 +1335,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(c){
@@ -1424,25 +1424,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(d){
@@ -1514,25 +1514,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(e){
@@ -1603,25 +1603,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		switch(f){
@@ -1692,25 +1692,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 			switch(g){
@@ -1781,25 +1781,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 			switch(h){
@@ -1882,25 +1882,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<aq<<endl;
@@ -1910,25 +1910,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<bq<<endl;
@@ -1938,25 +1938,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<cq<<endl;
@@ -1966,25 +1966,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<dq<<endl;
@@ -1994,25 +1994,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<eq<<endl;
@@ -2022,25 +2022,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<fq<<endl;
@@ -2050,25 +2050,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<gq<<endl;
@@ -2078,25 +2078,25 @@ else{
 				cout<<"Microwave Oven 1.5L             ";
 				break;
 			case 2:
-				cout<<"Tiers Shoe Rack                 ";
+				cout<<"Tiers Shoe Rack             ";
 				break;
 			case 3: 
-				cout<<"Panasonic Iron                  ";
+				cout<<"Panasonic Iron             ";
 				break;
 			case 4:
-				cout<<"Kitchen L Shape Carpet          ";
+				cout<<"Kitchen L Shape Carpet             ";
 				break;
 			case 5:
-				cout<<"Rice Cooker 1L                  ";
+				cout<<"Rice Cooker 1L             ";
 				break;
 			case 6:
-				cout<<"San Disk Ultra Micro SD 32GB    ";
+				cout<<"San Disk Ultra Micro SD 32GB             ";
 				break;
 			case 7:
-				cout<<"Hair Dryer                      ";
+				cout<<"Hair Dryer             ";
 				break;
 			case 8:
-				cout<<"Mini Bluetooth Speaker          ";
+				cout<<"Mini Bluetooth Speaker             ";
 				break;
 		}
 		cout<<hq<<endl;
