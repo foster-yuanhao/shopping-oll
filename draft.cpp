@@ -63,8 +63,7 @@ if (responce==1){
 				break;
 			case 8:
 				cout<<"Mini Bluetooth Speaker " ;
-				break;
-				 
+				break; 
 		}
 		switch(a){
 				case 1:
@@ -2219,23 +2218,15 @@ else{
 			goto startcus;
 		}
 			}
-        
-   
-		
 		else{
-	
 			goto startcus;
 		}  	
     }
- 
-		
 		else{
-
 			goto startcus;
 		}
     
 		}
-		
 		else{
 			goto startcus;
 		}
