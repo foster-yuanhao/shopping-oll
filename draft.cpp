@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <cstring>
 using namespace std;
-int responce;
+int responce;    //to determine if he/she is a staff
 string staff;    //the staff code.
 int menu;        //for the item list
 int shopping;
@@ -68,7 +68,7 @@ if (responce==1){
 		}
 		switch(a){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -157,7 +157,7 @@ if (responce==1){
 		}
 		switch(b){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -246,7 +246,7 @@ if (responce==1){
 		}
 		switch(c){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -336,7 +336,7 @@ if (responce==1){
 		}
 		switch(d){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -427,7 +427,7 @@ if (responce==1){
 		}
 		switch(e){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -517,7 +517,7 @@ if (responce==1){
 		}
 		switch(f){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -607,7 +607,7 @@ if (responce==1){
 		}
 			switch(g){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -697,7 +697,7 @@ if (responce==1){
 		}
 			switch(h){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1191,7 +1191,7 @@ else{
 		}
 		switch(a){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1280,7 +1280,7 @@ else{
 		}
 		switch(b){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1369,7 +1369,7 @@ else{
 		}
 		switch(c){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1459,7 +1459,7 @@ else{
 		}
 		switch(d){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1550,7 +1550,7 @@ else{
 		}
 		switch(e){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1640,7 +1640,7 @@ else{
 		}
 		switch(f){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1730,7 +1730,7 @@ else{
 		}
 			switch(g){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -1820,7 +1820,7 @@ else{
 		}
 			switch(h){
 				case 1:
-				cout<<"229 ";
+				cout<<"299 ";
 				break;
 			case 2:
 				cout<<"12 ";
@@ -2201,7 +2201,7 @@ else{
 	    cout<<"                  Do you want to add any items? 1-Yes 2-No \n";
         cin>>additems;
         if(additems==1){
-        			cout<<"Enter the item number";
+        		cout<<"Enter the item number";
 		cin>>h; 
         cout<<"how many items do you want?";
         cin>>hq;
