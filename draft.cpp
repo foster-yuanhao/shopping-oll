@@ -33,10 +33,10 @@ if (responce==1){
         cout<<"\n\t\t\t       4. EXIT";
         cout<<"\n\t\t\t    * * * * * * * * * * * *\n";
         cin>>menu;
-        if (menu==4){
+        if (menu==4){// exit
         	exit(1);
 		}
-        if (menu==3){
+        if (menu==3){// check out
         cout<<" No          name              prise        quantity    totalprise   \n ";
         cout<<"____________________________________________________\n ";
         	 cout<<a<<" ";
@@ -764,7 +764,7 @@ if (responce==1){
         	
         	
 		}
-        if (menu==2){
+        if (menu==2){// shopping cart
         cout<<"No          name                      quantity      \n ";
         cout<<"____________________________________________________\n ";
         cout<<a<<" ";
@@ -997,7 +997,7 @@ if (responce==1){
 		cout<<hq<<endl;
 		goto startcus1;
 		}
-        if (menu==1){
+        if (menu==1){// shopping list
         cout<<"__________________________________________________________________________\n";
         cout<<"**********   |    NO.          ITEM NAME                   |    **********\n";
         cout<<"**********   |    1.      Microwave Oven 1.5L              |    **********\n";
@@ -1147,10 +1147,10 @@ else{
         cout<<"\n\t\t\t       4. EXIT";
         cout<<"\n\t\t\t    * * * * * * * * * * * *\n";
         cin>>menu;
-        if (menu==4){
+        if (menu==4){// exit
         	exit(1);
 		}
-        if (menu==3){
+        if (menu==3){// check out
         		cout<<"____________________________________\n";
         	 cout<<a<<" ";
 		switch(a){
@@ -1873,7 +1873,7 @@ else{
 		}
         	system("pause");	
 		}
-        if (menu==2){
+        if (menu==2){// shopping cart
         cout<<"No          name                      quantity      \n ";
         cout<<"____________________________________________________\n ";
 		cout<<a<<" ";
@@ -2102,7 +2102,7 @@ else{
 		cout<<hq<<endl;
 		goto startcus;
 		}
-        if (menu==1){
+        if (menu==1){// shoppijng list
         cout<<"__________________________________________________________________________\n";
         cout<<"**********   |    NO.          ITEM NAME                   |    **********\n";
         cout<<"**********   |    1.      Microwave Oven 1.5L              |    **********\n";
