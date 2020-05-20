@@ -4,7 +4,7 @@
 #include<stdlib.h>
 #include<windows.h>
 #define T 10000//Declear constant T=10000
-using namespace std;
+using namespace std;//using namespace std
 double normaldanmemberdc(double price){  //Customer and member discount function
 	double tp;
 	if(price>=300){
